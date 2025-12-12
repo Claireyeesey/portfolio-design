@@ -1,188 +1,425 @@
 <!doctype html>
-<html lang="en">
+<html lang="zh-Hans">
 <head>
-  <meta charset="utf-8">
-  <title>Miss Ng – Illustration Portfolio</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <!-- Link CSS -->
-  <link rel="stylesheet" href="style.css">
-
-  <style>
-    body {
-      margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
-                   Roboto, Helvetica, Arial, sans-serif;
-      background: #0f0f14;
-      color: #f2f2f2;
-      line-height: 1.6;
-    }
-
-    header {
-      padding: 80px 20px;
-      text-align: center;
-    }
-
-    header h1 {
-      font-size: 3rem;
-      margin-bottom: 10px;
-    }
-
-    header p {
-      color: #aaa;
-      max-width: 640px;
-      margin: 0 auto;
-    }
-
-    section {
-      max-width: 1100px;
-      margin: 0 auto;
-      padding: 60px 20px;
-    }
-
-    h2 {
-      font-size: 2rem;
-      margin-bottom: 20px;
-      border-left: 4px solid #7fd1c7;
-      padding-left: 12px;
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 20px;
-    }
-
-    .card {
-      background: #1a1a22;
-      border-radius: 14px;
-      overflow: hidden;
-      transition: transform 0.25s ease;
-    }
-
-    .card:hover {
-      transform: translateY(-6px);
-    }
-
-    .card img {
-      width: 100%;
-      display: block;
-    }
-
-    .card .info {
-      padding: 16px;
-    }
-
-    .card h3 {
-      margin: 0 0 6px;
-      font-size: 1.2rem;
-    }
-
-    .card p {
-      margin: 0;
-      font-size: 0.9rem;
-      color: #bbb;
-    }
-
-    footer {
-      text-align: center;
-      padding: 60px 20px;
-      color: #777;
-      font-size: 0.9rem;
-    }
-
-    a {
-      color: #7fd1c7;
-      text-decoration: none;
-    }
-  </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Miss Ng — Portfolio</title>
+  <meta name="description" content="Miss Ng — Illustration, Digital Painting, Stickers, Scene Design, Lettering, Packaging, 3D Character." />
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
+  <!-- Top bar -->
+  <header class="topbar">
+    <div class="wrap topbar-row">
+      <div class="brand">
+        <span class="dot" aria-hidden="true"></span>
+        <div>
+          <div class="brand-name">Miss Ng</div>
+          <div class="brand-sub">Digital Painting · Illustration · Stickers · Scenes</div>
+        </div>
+      </div>
 
-<header>
-  <h1>Miss Ng</h1>
-  <p>
-    Illustrator & Visual Designer<br>
-    Illustration · Scene Art · Digital Painting · Stickers · Animated Backgrounds
-  </p>
-</header>
+      <nav class="nav">
+        <a href="#work">作品</a>
+        <a href="#about">关于</a>
+        <a href="#contact" class="btn btn-sm">联系</a>
+      </nav>
+    </div>
+  </header>
 
-<section>
-  <h2>Selected Illustration Scenes</h2>
-
-  <div class="grid">
-
-    <!-- Scene Illustration 1 -->
-    <div class="card">
-      <img src="image/scene-coffee.jpg" alt="Cafe Illustration Scene">
-      <div class="info">
-        <h3>Scene Illustration 01 – Café Moment</h3>
-        <p>
-          A warm, narrative-driven café scene illustration.
-          Suitable for brand storytelling, posters, editorial visuals,
-          and lifestyle campaigns.
+  <!-- Hero -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-left">
+        <p class="kicker">VISUAL DESIGNER</p>
+        <h1>电绘 / 插画 / 小贴图 / 场景设计 — 让作品更有故事感、更高级。</h1>
+        <p class="lead">
+          这里是我的精选作品集：电绘、场景插画、小贴图、字体（lettering）、包装概念、3D角色与地图插画。
+          <br />点击任意作品可放大查看。
         </p>
+
+        <div class="cta">
+          <a class="btn" href="#work">查看全部作品</a>
+          <a class="btn btn-ghost" href="#contact">合作咨询</a>
+        </div>
+
+        <ul class="facts">
+          <li><b>作品数量</b> 15 张</li>
+          <li><b>交付</b> JPG/PNG · PDF · 可提供源文件（按项目）</li>
+          <li><b>风格</b> Playful · Clean · Premium</li>
+        </ul>
+      </div>
+
+      <div class="hero-right">
+        <button class="feature" data-full="image/ill-urban.jpg" data-title="电绘插画 · Urban" data-tag="电绘 / 插画">
+          <img src="image/ill-urban.jpg" alt="Featured artwork" loading="lazy" />
+          <div class="feature-cap">
+            <div>
+              <div class="feature-title">Featured</div>
+              <div class="feature-name">电绘插画 · Urban</div>
+            </div>
+            <span class="pill">电绘 / 插画</span>
+          </div>
+        </button>
       </div>
     </div>
+  </section>
 
-    <!-- Scene Illustration 2 -->
-    <div class="card">
-      <img src="image/scene-giant-dog.jpg" alt="Giant Dog Illustration Scene">
-      <div class="info">
-        <h3>Scene Illustration 02 – Giant Dog in City</h3>
-        <p>
-          A surreal city-scale character illustration combining humor
-          and imagination. Ideal for advertising concepts, key visuals,
-          and creative campaigns.
+  <!-- Work -->
+  <main id="work" class="section">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <h2>全部作品（15）</h2>
+          <p class="muted">按分类筛选：电绘、场景、小贴图、字体、包装、3D、地图。</p>
+        </div>
+
+        <div class="filters" role="tablist" aria-label="作品分类">
+          <button class="chip is-active" data-filter="all" role="tab" aria-selected="true">全部</button>
+          <button class="chip" data-filter="painting" role="tab">电绘</button>
+          <button class="chip" data-filter="illustration" role="tab">插画</button>
+          <button class="chip" data-filter="scenes" role="tab">场景</button>
+          <button class="chip" data-filter="stickers" role="tab">小贴图</button>
+          <button class="chip" data-filter="lettering" role="tab">字体</button>
+          <button class="chip" data-filter="packaging" role="tab">包装</button>
+          <button class="chip" data-filter="3d" role="tab">3D</button>
+          <button class="chip" data-filter="map" role="tab">地图</button>
+        </div>
+      </div>
+
+      <section class="grid" id="grid">
+        <!-- 1 ill-painting -->
+        <article class="card" data-cat="painting">
+          <button class="thumb" data-full="image/ill-painting.jpg" data-title="电绘 · Ill Painting" data-tag="电绘">
+            <img src="image/ill-painting.jpg" alt="ill-painting" loading="lazy" />
+          </button>
+          <div class="card-body">
+            <h3>电绘 · Ill Painting</h3>
+            <p>色彩与质感控制，适合主视觉与海报。</p>
+            <div class="tags"><span>电绘</span></div>
+          </div>
+        </article>
+
+        <!-- 2 painting-1 -->
+        <article class="card" data-cat="painting">
+          <button class="thumb" data-full="image/painting-1.jpg" data-title="电绘 · Painting Study" data-tag="电绘">
+            <img src="image/painting-1.jpg" alt="painting-1" loading="lazy" />
+          </button>
+          <div class="card-body">
+            <h3>电绘 · Painting Study</h3>
+            <p>光影练习与氛围塑造。</p>
+            <div class="tags"><span>电绘</span></div>
+          </div>
+        </article>
+
+        <!-- 3 ill-urban -->
+        <article class="card" data-cat="illustration">
+          <button class="thumb" data-full="image/ill-urban.jpg" data-title="插画 · Urban" data-tag="插画">
+            <img src="image/ill-urban.jpg" alt="ill-urban" loading="lazy" />
+          </button>
+          <div class="card-body">
+            <h3>插画 · Urban</h3>
+            <p>干净线条与有趣细节，适合品牌视觉。</p>
+            <div class="tags"><span>插画</span></div>
+          </div>
+        </article>
+
+        <!-- 4 ill-scenes -->
+        <article class="card" data-cat="scenes">
+          <button class="thumb" data-full="image/ill-scenes.jpg" data-title="场景合集 · Ill Scenes" data-tag="场景">
+            <img src="image/ill-scenes.jpg" alt="ill-scenes" loading="lazy" />
+          </button>
+          <div class="card-body">
+            <h3>场景合集 · Ill Scenes</h3>
+            <p>多风格场景统一视觉语言。</p>
+            <div class="tags"><span>场景</span></div>
+          </div>
+        </article>
+
+        <!-- 5 scene-coffee -->
+        <article class="card" data-cat="scenes">
+          <button class="thumb" data-full="image/scene-coffee.jpg" data-title="场景 · Coffee Shop" data-tag="场景">
+            <img src="image/scene-coffee.jpg" alt="scene-coffee" loading="lazy" />
+          </button>
+          <div class="card-body">
+            <h3>场景 · Coffee Shop</h3>
+            <p>温暖氛围、细节讲故事。</p>
+            <div class="tags"><span>场景</span></div>
+          </div>
+        </article>
+
+        <!-- 6 scene-giant-dog -->
+        <article class="card" data-cat="scenes">
+          <button class="thumb" data-full="image/scene-giant-dog.jpg" data-title="场景 · Giant Dog" data-tag="场景">
+            <img src="image/scene-giant-dog.jpg" alt="scene-giant-dog" loading="lazy" />
+          </button>
+          <div class="card-body">
+            <h3>场景 · Giant Dog</h3>
+            <p>夸张比例与趣味性强的主视觉。</p>
+            <div class="tags"><span>场景</span></div>
+          </div>
+        </article>
+
+        <!-- 7 stickers-sheet -->
+        <article class="card" data-cat="stickers">
+          <button class="thumb" data-full="image/stickers-sheet.jpg" data-title="小贴图 · Sticker Sheet" data-tag="小贴图">
+            <img src="image/stickers-sheet.jpg" alt="stickers-sheet" loading="lazy" />
+          </button>
+          <div class="card-body">
+            <h3>小贴图 · Sticker Sheet</h3>
+            <p>可扩展系列化的小贴图设计。</p>
+            <div class="tags"><span>小贴图</span></div>
+          </div>
+        </article>
+
+        <!-- 8 lettering-1 -->
+        <article class="card" data-cat="lettering">
+          <button class="thumb" data-full="image/lettering-1.jpg" data-title="字体 · Lettering 01" data-tag="字体">
+            <img src="image/lettering-1.jpg" alt="lettering-1" loading="lazy" />
+          </button>
+          <div class="card-body">
+            <h3>字体 · Lettering 01</h3>
+            <p>字形节奏、重心与对比。</p>
+            <div class="tags"><span>字体</span></div>
+          </div>
+        </article>
+
+        <!-- 9 lettering-2 -->
+        <article class="card" data-cat="lettering">
+          <button class="thumb" data-full="image/lettering-2.jpg" data-title="字体 · Lettering 02" data-tag="字体">
+            <img src="image/lettering-2.jpg" alt="lettering-2" loading="lazy" />
+          </button>
+          <div class="card-body">
+            <h3>字体 · Lettering 02</h3>
+            <p>另一种风格尝试，强调干净收尾。</p>
+            <div class="tags"><span>字体</span></div>
+          </div>
+        </article>
+
+        <!-- 10 map-1 -->
+        <article class="card" data-cat="map">
+          <button class="thumb" data-full="image/map-1.jpg" data-title="地图插画 · Map" data-tag="地图">
+            <img src="image/map-1.jpg" alt="map-1" loading="lazy" />
+          </button>
+          <div class="card-body">
+            <h3>地图插画 · Map</h3>
+            <p>图标清晰、阅读友好。</p>
+            <div class="tags"><span>地图</span></div>
+          </div>
+        </article>
+
+        <!-- 11 work-3d-character -->
+        <article class="card" data-cat="3d">
+          <button class="thumb" data-full="image/work-3d-character.jpg" data-title="3D · Character" data-tag="3D">
+            <img src="image/work-3d-character.jpg" alt="work-3d-character" loading="lazy" />
+          </button>
+          <div class="card-body">
+            <h3>3D · Character</h3>
+            <p>可爱比例与友好质感表现。</p>
+            <div class="tags"><span>3D</span></div>
+          </div>
+        </article>
+
+        <!-- 12 work-lettering -->
+        <article class="card" data-cat="lettering">
+          <button class="thumb" data-full="image/work-lettering.jpg" data-title="字体应用 · Work Lettering" data-tag="字体">
+            <img src="image/work-lettering.jpg" alt="work-lettering" loading="lazy" />
+          </button>
+          <div class="card-body">
+            <h3>字体应用 · Work Lettering</h3>
+            <p>字体方向与版式应用展示。</p>
+            <div class="tags"><span>字体</span></div>
+          </div>
+        </article>
+
+        <!-- 13 work-packaging -->
+        <article class="card" data-cat="packaging">
+          <button class="thumb" data-full="image/work-packaging.jpg" data-title="包装概念 · Work Packaging" data-tag="包装">
+            <img src="image/work-packaging.jpg" alt="work-packaging" loading="lazy" />
+          </button>
+          <div class="card-body">
+            <h3>包装概念 · Work Packaging</h3>
+            <p>品牌导向的包装视觉与版面结构。</p>
+            <div class="tags"><span>包装</span></div>
+          </div>
+        </article>
+
+        <!-- 14 work-packaging2 -->
+        <article class="card" data-cat="packaging">
+          <button class="thumb" data-full="image/work-packaging2.jpg" data-title="包装概念 · Work Packaging 02" data-tag="包装">
+            <img src="image/work-packaging2.jpg" alt="work-packaging2" loading="lazy" />
+          </button>
+          <div class="card-body">
+            <h3>包装概念 · Work Packaging 02</h3>
+            <p>系列化延展与图文平衡。</p>
+            <div class="tags"><span>包装</span></div>
+          </div>
+        </article>
+
+        <!-- 15 work-scene -->
+        <article class="card" data-cat="scenes">
+          <button class="thumb" data-full="image/work-scene.jpg" data-title="场景方向 · Work Scene" data-tag="场景">
+            <img src="image/work-scene.jpg" alt="work-scene" loading="lazy" />
+          </button>
+          <div class="card-body">
+            <h3>场景方向 · Work Scene</h3>
+            <p>场景构图与视觉方向总结。</p>
+            <div class="tags"><span>场景</span></div>
+          </div>
+        </article>
+      </section>
+    </div>
+  </main>
+
+  <!-- About -->
+  <section id="about" class="section soft">
+    <div class="wrap about-grid">
+      <div>
+        <h2>关于我</h2>
+        <p class="muted">
+          我专注于电绘、插画、场景与小贴图等视觉内容。风格偏向干净、活泼、带一点高级感。
+          我可以提供概念稿、完善稿、以及适合印刷/网页的交付文件。
         </p>
+
+        <div class="about-cards">
+          <div class="abox">
+            <h3>擅长</h3>
+            <ul>
+              <li>电绘插画 / 主视觉</li>
+              <li>场景插画（故事感）</li>
+              <li>小贴图系列化</li>
+              <li>字体（Lettering）</li>
+              <li>包装概念 / 版面</li>
+            </ul>
+          </div>
+
+          <div class="abox">
+            <h3>合作流程</h3>
+            <ul>
+              <li>需求沟通（风格/用途）</li>
+              <li>2–3 个方向草稿</li>
+              <li>迭代修改（可约定次数）</li>
+              <li>交付（JPG/PNG/PDF）</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="aside">
+        <div class="stat">
+          <div class="stat-num">15</div>
+          <div class="stat-label">Works</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">7+</div>
+          <div class="stat-label">Categories</div>
+        </div>
+        <div class="note">提示：点击作品即可放大预览；按 ESC 关闭。</div>
       </div>
     </div>
+  </section>
 
+  <!-- Contact -->
+  <section id="contact" class="section">
+    <div class="wrap">
+      <h2>联系</h2>
+      <p class="muted">把你的项目目标、尺寸/用途、参考风格发给我，我会回复报价与时间表。</p>
+
+      <div class="contact">
+        <div class="citem">
+          <div class="label">Email</div>
+          <div class="value">yourname@email.com</div>
+        </div>
+        <div class="citem">
+          <div class="label">WhatsApp</div>
+          <div class="value">+60 1X-XXXX XXXX</div>
+        </div>
+        <div class="citem">
+          <div class="label">Portfolio</div>
+          <div class="value">Behance / Instagram</div>
+        </div>
+      </div>
+
+      <p class="tiny muted">你可以把上面三项改成你的真实资料。</p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="wrap foot-row">
+      <div class="muted">© <span id="y"></span> Miss Ng</div>
+      <a class="backtop" href="#work">回到作品 ↑</a>
+    </div>
+  </footer>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lb" aria-hidden="true">
+    <div class="lb-bg" data-close></div>
+    <div class="lb-panel" role="dialog" aria-modal="true" aria-label="作品预览">
+      <button class="lb-close" data-close aria-label="关闭">✕</button>
+      <div class="lb-head">
+        <div>
+          <div class="lb-title" id="lbTitle">Title</div>
+          <div class="lb-tag" id="lbTag">Tag</div>
+        </div>
+        <a class="lb-open" id="lbOpen" href="#" target="_blank" rel="noreferrer">打开原图</a>
+      </div>
+      <img id="lbImg" alt="作品预览" />
+    </div>
   </div>
-</section>
 
-<section>
-  <h2>Animated Background Illustration</h2>
+  <script>
+    // year
+    document.getElementById('y').textContent = new Date().getFullYear();
 
-  <div class="grid">
-    <div class="card">
-      <img src="image/ill-scenes.jpg" alt="Underwater House Animation Background">
-      <div class="info">
-        <h3>Underwater House – Animated Scene</h3>
-        <p>
-          A looping background illustration designed for animation use.
-          Works well for game scenes, websites, social media visuals,
-          and digital storytelling environments.
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
+    // filter
+    const chips = document.querySelectorAll('.chip');
+    const cards = document.querySelectorAll('.card');
 
-<section>
-  <h2>Illustration & Digital Art</h2>
+    chips.forEach(btn => {
+      btn.addEventListener('click', () => {
+        chips.forEach(b => b.classList.remove('is-active'));
+        btn.classList.add('is-active');
+        const f = btn.dataset.filter;
 
-  <p>
-    My work includes digital painting, hand-drawn illustration,
-    sticker illustration, character design, and experimental textures.
-    I focus on emotional atmosphere, soft color palettes, and
-    story-oriented visuals.
-  </p>
-</section>
+        cards.forEach(c => {
+          const cat = c.dataset.cat;
+          c.style.display = (f === 'all' || cat === f) ? '' : 'none';
+        });
+      });
+    });
 
-<section>
-  <h2>Contact</h2>
+    // lightbox
+    const lb = document.getElementById('lb');
+    const lbImg = document.getElementById('lbImg');
+    const lbTitle = document.getElementById('lbTitle');
+    const lbTag = document.getElementById('lbTag');
+    const lbOpen = document.getElementById('lbOpen');
 
-  <p>
-    Email:
-    <a href="mailto:msng1197@gmail.com">msng1197@gmail.com</a>
-  </p>
-</section>
+    function openLB(src, title, tag){
+      lbImg.src = src;
+      lbTitle.textContent = title || 'Artwork';
+      lbTag.textContent = tag || '';
+      lbOpen.href = src;
+      lb.classList.add('open');
+      lb.setAttribute('aria-hidden','false');
+      document.body.classList.add('noscroll');
+    }
+    function closeLB(){
+      lb.classList.remove('open');
+      lb.setAttribute('aria-hidden','true');
+      document.body.classList.remove('noscroll');
+      lbImg.src = '';
+    }
 
-<footer>
-  © 2025 Miss Ng · Illustration Portfolio
-</footer>
+    document.querySelectorAll('[data-full]').forEach(el => {
+      el.addEventListener('click', () => {
+        openLB(el.dataset.full, el.dataset.title, el.dataset.tag);
+      });
+    });
 
+    lb.querySelectorAll('[data-close]').forEach(el => el.addEventListener('click', closeLB));
+    document.addEventListener('keydown', (e) => { if(e.key === 'Escape') closeLB(); });
+  </script>
 </body>
 </html>
