@@ -1,118 +1,286 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2487.5">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
-  </style>
-</head>
-<body>
-<p class="p1">* { box-sizing: border-box; }</p>
-<p class="p1">body {</p>
-<p class="p1"><span class="Apple-converted-space">  </span>margin: 0;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>background: #0b0b0d;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>color: #f2f2f4;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">a { color: inherit; text-decoration: none; }</p>
-<p class="p1">img { width: 100%; border-radius: 16px; }</p>
-<p class="p2"><br></p>
-<p class="p1">.container {</p>
-<p class="p1"><span class="Apple-converted-space">  </span>max-width: 1100px;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>margin: auto;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>padding: 0 20px;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">.site-header {</p>
-<p class="p1"><span class="Apple-converted-space">  </span>position: sticky;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>top: 0;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>background: rgba(11,11,13,0.85);</p>
-<p class="p1"><span class="Apple-converted-space">  </span>backdrop-filter: blur(10px);</p>
-<p class="p1"><span class="Apple-converted-space">  </span>border-bottom: 1px solid rgba(255,255,255,0.1);</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">.header-inner {</p>
-<p class="p1"><span class="Apple-converted-space">  </span>display: flex;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>justify-content: space-between;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>align-items: center;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>padding: 14px 0;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">.logo { display: flex; gap: 10px; align-items: center; }</p>
-<p class="p1">.logo-mark {</p>
-<p class="p1"><span class="Apple-converted-space">  </span>width: 34px; height: 34px;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>border-radius: 10px;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>background: rgba(255,255,255,0.15);</p>
-<p class="p1"><span class="Apple-converted-space">  </span>display: flex;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>align-items: center;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>justify-content: center;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>font-weight: bold;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">.nav a { margin-left: 16px; color: #b8b8c2; }</p>
-<p class="p1">.nav .btn {</p>
-<p class="p1"><span class="Apple-converted-space">  </span>padding: 8px 14px;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>border-radius: 14px;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>background: rgba(255,255,255,0.15);</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">.hero { padding: 60px 0; }</p>
-<p class="p1">.hero-grid {</p>
-<p class="p1"><span class="Apple-converted-space">  </span>display: grid;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>grid-template-columns: 1.2fr 0.8fr;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>gap: 20px;</p>
-<p class="p1">}</p>
-<p class="p1">.hero h1 { font-size: 3rem; line-height: 1.1; }</p>
-<p class="p2"><br></p>
-<p class="p1">.btn {</p>
-<p class="p1"><span class="Apple-converted-space">  </span>padding: 10px 16px;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>border-radius: 14px;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>background: rgba(255,255,255,0.15);</p>
-<p class="p1"><span class="Apple-converted-space">  </span>display: inline-block;</p>
-<p class="p1">}</p>
-<p class="p1">.btn.ghost { background: none; border: 1px solid rgba(255,255,255,0.15); }</p>
-<p class="p2"><br></p>
-<p class="p1">.section { padding: 60px 0; }</p>
-<p class="p1">.section.alt {</p>
-<p class="p1"><span class="Apple-converted-space">  </span>background: rgba(255,255,255,0.03);</p>
-<p class="p1"><span class="Apple-converted-space">  </span>border-top: 1px solid rgba(255,255,255,0.08);</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">.grid {</p>
-<p class="p1"><span class="Apple-converted-space">  </span>display: grid;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>grid-template-columns: repeat(2, 1fr);</p>
-<p class="p1"><span class="Apple-converted-space">  </span>gap: 18px;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">.grid-3 { grid-template-columns: repeat(3, 1fr); }</p>
-<p class="p2"><br></p>
-<p class="p1">.card {</p>
-<p class="p1"><span class="Apple-converted-space">  </span>background: rgba(255,255,255,0.05);</p>
-<p class="p1"><span class="Apple-converted-space">  </span>padding: 16px;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>border-radius: 20px;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">.mini-card {</p>
-<p class="p1"><span class="Apple-converted-space">  </span>background: rgba(255,255,255,0.05);</p>
-<p class="p1"><span class="Apple-converted-space">  </span>padding: 18px;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>border-radius: 20px;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">.site-footer {</p>
-<p class="p1"><span class="Apple-converted-space">  </span>padding: 30px 0;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>text-align: center;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>color: #b8b8c2;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">@media (max-width: 900px) {</p>
-<p class="p1"><span class="Apple-converted-space">  </span>.hero-grid { grid-template-columns: 1fr; }</p>
-<p class="p1"><span class="Apple-converted-space">  </span>.grid, .grid-3 { grid-template-columns: 1fr; }</p>
-<p class="p1">}</p>
-</body>
-</html>
+:root{
+  --bg:#0b0c10;
+  --card:rgba(255,255,255,.06);
+  --card2:rgba(255,255,255,.09);
+  --text:rgba(255,255,255,.92);
+  --muted:rgba(255,255,255,.62);
+  --line:rgba(255,255,255,.12);
+  --shadow:0 18px 46px rgba(0,0,0,.34);
+  --r:18px;
+}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Arial, "Apple Color Emoji","Segoe UI Emoji";
+  color:var(--text);
+  background:
+    radial-gradient(1200px 680px at 15% -10%, rgba(255,255,255,.10), transparent 60%),
+    radial-gradient(900px 520px at 85% 0%, rgba(255,255,255,.08), transparent 55%),
+    var(--bg);
+}
+
+.wrap{width:min(1120px,92vw);margin:0 auto}
+a{color:inherit;text-decoration:none}
+img{display:block;max-width:100%}
+.noscroll{overflow:hidden}
+
+/* Topbar */
+.topbar{
+  position:sticky;top:0;z-index:40;
+  background:rgba(11,12,16,.72);
+  backdrop-filter: blur(14px);
+  border-bottom:1px solid var(--line);
+}
+.topbar-row{display:flex;align-items:center;justify-content:space-between;padding:14px 0;gap:12px}
+.brand{display:flex;align-items:center;gap:12px}
+.dot{
+  width:10px;height:10px;border-radius:50%;
+  background:rgba(255,255,255,.92);
+  box-shadow:0 0 0 7px rgba(255,255,255,.08);
+}
+.brand-name{font-weight:800;letter-spacing:.2px}
+.brand-sub{font-size:12px;color:var(--muted);margin-top:2px}
+
+.nav{display:flex;align-items:center;gap:18px;color:var(--muted)}
+.nav a{padding:8px 10px;border-radius:12px}
+.nav a:hover{background:rgba(255,255,255,.06);color:var(--text)}
+
+/* Buttons */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:8px;
+  padding:12px 16px;border-radius:14px;
+  border:1px solid rgba(255,255,255,.18);
+  background:rgba(255,255,255,.10);
+  box-shadow:0 12px 32px rgba(0,0,0,.25);
+}
+.btn:hover{background:rgba(255,255,255,.14)}
+.btn-ghost{background:transparent;box-shadow:none;border-color:rgba(255,255,255,.16)}
+.btn-ghost:hover{background:rgba(255,255,255,.06)}
+.btn-sm{padding:10px 14px}
+
+/* Hero */
+.hero{padding:54px 0 26px}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:22px;align-items:start}
+.kicker{margin:0 0 14px;color:var(--muted);font-size:12px;letter-spacing:.16em;text-transform:uppercase}
+.hero h1{margin:0 0 14px;line-height:1.12;font-size:clamp(28px,3.2vw,44px)}
+.lead{margin:0 0 20px;color:var(--muted);line-height:1.65}
+.cta{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:18px}
+
+.facts{
+  margin:0;padding:16px 0 0;list-style:none;
+  border-top:1px solid var(--line);
+  display:grid;gap:10px;color:var(--muted)
+}
+.facts b{color:rgba(255,255,255,.88);margin-right:8px}
+
+.feature{
+  width:100%;
+  padding:0;border:1px solid var(--line);
+  border-radius:var(--r);
+  background:linear-gradient(180deg, rgba(255,255,255,.10), rgba(255,255,255,.05));
+  box-shadow:var(--shadow);
+  overflow:hidden;
+  cursor:pointer;
+}
+.feature img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.feature-cap{
+  display:flex;align-items:center;justify-content:space-between;gap:12px;
+  padding:12px 12px;border-top:1px solid var(--line)
+}
+.feature-title{font-size:12px;color:var(--muted);letter-spacing:.12em;text-transform:uppercase}
+.feature-name{font-size:14px;font-weight:800;margin-top:2px}
+
+.pill{
+  display:inline-flex;padding:6px 10px;border-radius:999px;
+  border:1px solid rgba(255,255,255,.16);
+  background:rgba(255,255,255,.06);
+  color:rgba(255,255,255,.86);
+  font-size:12px;
+}
+
+/* Sections */
+.section{padding:34px 0}
+.soft{
+  background:rgba(255,255,255,.03);
+  border-top:1px solid var(--line);
+  border-bottom:1px solid var(--line);
+}
+h2{margin:0 0 8px;font-size:24px}
+.muted{color:var(--muted)}
+.tiny{font-size:12px}
+
+/* Filters */
+.section-head{
+  display:flex;align-items:flex-end;justify-content:space-between;
+  gap:16px;margin-bottom:16px
+}
+.filters{display:flex;flex-wrap:wrap;gap:8px;justify-content:flex-end}
+.chip{
+  border:1px solid rgba(255,255,255,.14);
+  background:rgba(255,255,255,.06);
+  color:rgba(255,255,255,.78);
+  padding:8px 12px;border-radius:999px;
+  cursor:pointer;font-size:13px
+}
+.chip:hover{background:rgba(255,255,255,.10)}
+.chip.is-active{
+  background:rgba(255,255,255,.16);
+  color:rgba(255,255,255,.96);
+  border-color:rgba(255,255,255,.22)
+}
+
+/* Grid */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(12,1fr);
+  gap:14px;
+}
+.card{
+  grid-column:span 4;
+  border-radius:var(--r);
+  border:1px solid var(--line);
+  background:rgba(255,255,255,.05);
+  overflow:hidden;
+  box-shadow:0 12px 34px rgba(0,0,0,.18);
+}
+.thumb{
+  width:100%;padding:0;border:0;background:transparent;cursor:pointer;
+}
+.thumb img{
+  width:100%;
+  aspect-ratio:4/3;
+  object-fit:cover;
+  transition:transform .35s ease;
+}
+.card:hover .thumb img{transform:scale(1.03)}
+.card-body{padding:12px 12px 14px}
+.card-body h3{margin:0 0 6px;font-size:16px}
+.card-body p{margin:0 0 10px;font-size:13px;line-height:1.55;color:var(--muted)}
+.tags span{
+  display:inline-flex;padding:6px 10px;border-radius:999px;
+  border:1px solid rgba(255,255,255,.14);
+  background:rgba(255,255,255,.05);
+  font-size:12px;color:rgba(255,255,255,.78)
+}
+
+/* About */
+.about-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:18px;align-items:start}
+.about-cards{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:14px}
+.abox{
+  border:1px solid var(--line);
+  background:rgba(255,255,255,.05);
+  border-radius:var(--r);
+  padding:14px;
+}
+.abox h3{margin:0 0 10px;font-size:15px}
+.abox ul{margin:0;padding-left:18px;color:var(--muted)}
+.abox li{margin:6px 0}
+
+.aside{display:grid;gap:12px}
+.stat{
+  border:1px solid var(--line);
+  background:rgba(255,255,255,.05);
+  border-radius:var(--r);
+  padding:14px;
+}
+.stat-num{font-size:22px;font-weight:900}
+.stat-label{margin-top:6px;color:var(--muted)}
+.note{
+  border:1px solid rgba(255,255,255,.14);
+  background:rgba(255,255,255,.04);
+  border-radius:var(--r);
+  padding:14px;
+  color:var(--muted);
+}
+
+/* Contact */
+.contact{
+  margin-top:14px;
+  border-radius:var(--r);
+  border:1px solid var(--line);
+  background:rgba(255,255,255,.05);
+  padding:16px;
+  display:grid;
+  grid-template-columns:1fr 1fr 1fr;
+  gap:10px;
+}
+.citem .label{
+  font-size:12px;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  color:var(--muted);
+  margin-bottom:6px;
+}
+.citem .value{font-weight:800}
+
+/* Footer */
+.footer{padding:22px 0 34px;border-top:1px solid var(--line);color:var(--muted)}
+.foot-row{display:flex;align-items:center;justify-content:space-between;gap:14px}
+.backtop{
+  padding:8px 10px;border-radius:12px;
+  border:1px solid rgba(255,255,255,.14);
+  background:rgba(255,255,255,.05);
+}
+.backtop:hover{background:rgba(255,255,255,.08)}
+
+/* Lightbox */
+.lightbox{position:fixed;inset:0;display:none;z-index:100}
+.lightbox.open{display:block}
+.lb-bg{position:absolute;inset:0;background:rgba(0,0,0,.72)}
+.lb-panel{
+  position:relative;
+  width:min(980px,92vw);
+  margin:7vh auto 0;
+  border-radius:var(--r);
+  border:1px solid rgba(255,255,255,.16);
+  background:rgba(15,16,20,.92);
+  backdrop-filter:blur(14px);
+  box-shadow:var(--shadow);
+  overflow:hidden;
+}
+.lb-close{
+  position:absolute;top:10px;right:10px;
+  border:1px solid rgba(255,255,255,.14);
+  background:rgba(255,255,255,.06);
+  color:rgba(255,255,255,.86);
+  border-radius:12px;
+  padding:8px 10px;
+  cursor:pointer;
+}
+.lb-close:hover{background:rgba(255,255,255,.10)}
+.lb-head{
+  display:flex;align-items:center;justify-content:space-between;gap:12px;
+  padding:14px 14px 10px;
+  border-bottom:1px solid rgba(255,255,255,.12);
+}
+.lb-title{font-weight:900}
+.lb-tag{color:var(--muted);font-size:13px;margin-top:4px}
+.lb-open{
+  border:1px solid rgba(255,255,255,.14);
+  background:rgba(255,255,255,.06);
+  padding:8px 12px;border-radius:12px;
+}
+.lb-open:hover{background:rgba(255,255,255,.10)}
+#lbImg{
+  width:100%;
+  max-height:72vh;
+  object-fit:contain;
+  background:rgba(255,255,255,.03);
+}
+
+/* Responsive */
+@media (max-width:980px){
+  .hero-grid{grid-template-columns:1fr}
+  .about-grid{grid-template-columns:1fr}
+  .about-cards{grid-template-columns:1fr}
+  .filters{justify-content:flex-start}
+  .section-head{flex-direction:column;align-items:flex-start}
+  .contact{grid-template-columns:1fr}
+  .card{grid-column:span 6}
+}
+@media (max-width:640px){
+  .nav{gap:8px}
+  .card{grid-column:span 12}
+}
